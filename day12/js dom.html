@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        img{
+            margin-left: 25%;
+            margin-top:5%;
+            border: 2px solid black;
+        }
+        button{
+            padding: 10px;
+            background-color: darkgray;
+        }
+    
+       #button1 {
+            margin-left: 40%;
+        }
+
+    </style>  
+</head>
+<body>
+    <div>
+    <img src="https://media.dashdevs.com/images/top-frontend-technologies-2022-desktop.jpg"id="img1" height="50%" width="50%">
+    </div>
+    <br><br>
+    <button id="button1" >HTML</button>
+    <button id="button2">CSS</button>
+    <button id="button3" >JavaScript</button>
+    <button id="button4">React</button>
+    <script>
+        var image=document.getElementById("img1")
+        var button=document.getElementById("button1")
+        button.addEventListener("click",()=>{
+        image.src="https://verpex.com/assets/uploads/images/blog/Basic-HTML-Codes-for-Websites.webp?v=1691760654";
+        });
+    var button=document.getElementById("button2") 
+    button.addEventListener("click",()=>{
+    image.src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png";
+        });
+    var button=document.getElementById("button3") 
+    button.addEventListener("click",()=>{
+        image.src="https://www.mytaskpanel.com/wp-content/uploads/2023/05/consulting-blog-12.webp";
+        });
+    var button=document.getElementById("button4") 
+    button.addEventListener("click",()=>{
+        image.src="https://primathon.in/blog/wp-content/uploads/2024/05/image-1-12-1.jpg";
+        });
+    
+    </script>
+</body>
+</html>

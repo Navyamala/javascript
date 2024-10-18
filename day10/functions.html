@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //TASK-1
+        function greet(name){
+            return(`Hello,${name}`);
+        }
+      console.log(greet("navya"));
+      console.log(greet("nikitha"));
+      console.log(greet("nayani"));
+      //TASK-2
+      function sum(a,b){
+        console.log(a+b);
+      }
+      sum(2,3);
+      sum(4,5);
+      //TASK-3
+      function square(a){
+        console.log(a*a);
+      }
+      square(2);
+      square(5);
+      square(10);
+      // TASK-4
+      //reduce method
+      function average(arr){
+       const total=arr.reduce((acc,curr)=>acc+curr, 0);
+       return total/arr.length;
+      }
+      console.log(average([2,5,2]));
+      console.log(average([3,6,9,12]));
+      console.log(average([3,6,9,]));
+     //for of
+      var arr=[1,2,3];
+      var arr=[10,20,30,40]
+      function avg(arr){
+        var sum=0;
+        for(i of arr){
+          sum+=i;
+        }
+        return sum/arr.length;
+      }
+      console.log(avg(arr));
+      //for
+      function average(arr){
+        let sum=0;
+        for(let i=0;i<arr.length;i++){
+          sum+=arr[i];
+        }
+        return sum/arr.length;
+      }
+      //TASK-5
+      function VowelsAndNonVowels(String) {
+      const vowels = "aeiouAEIOU";
+      let vowelsInString = "";
+      let nonVowelsInString = "";
+
+        for (let i = 0; i < String.length; i++) {
+        if (vowels.includes(String[i])) {
+            vowelsInString += String[i];
+        } else {
+            nonVowelsInString += String[i];
+        }
+    }
+
+    console.log("Vowels: " + vowelsInString);
+    console.log("Non-vowels: " + nonVowelsInString);
+}
+    VowelsAndNonVowels("Nanna");  
+    VowelsAndNonVowels("Navya");  
+    VowelsAndNonVowels("Amma");
+
+    //Task-6
+    function temp(val) {
+            if ((b == "c" ||b== "C")) {
+                console.log("Celsious to Fahrenheit:");
+                var c = val * (9 / 5) + 32;
+                console.log(c + "f");
+            }
+            else if (b == "f" ||b=="F") {
+                console.log("Fahrenheit to Celsious:");
+                var d = (val - 32) * (5 / 9);
+                console.log(d + "c");
+            }
+            else{
+                console.log("This is not a Unit");
+            }
+        }
+        var a = prompt("Enter the Temperature Value:");
+        var b = prompt("Enter the unit to convert from: (ex- c or f)");
+        temp(a);  
+    </script>
+</body>
+</html> 

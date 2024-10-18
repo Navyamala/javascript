@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    temperature 
+        var temp1=prompt("Enter Temperature");
+        var temp2=temp1>30?"Hot":(temp1>=20)&&(temp1<=30)?"Warm":(temp1>=10)&&(temp1<=19)?"Cool":"Enter a valid temperature";
+        console.log(temp2);
+    //    age
+        var age=prompt("Enter age");
+        var years=(age==0)||(age<=12)?"Child":(age==13)||(age<=19)?"Teen":(age==20)||(age>=64)?"Adult":(age>=65)?"Senior":"Enter a valid age group";
+        console.log(years);
+    //  score
+        var score=prompt("Enter marks between 0-100"); 
+        var grade=(score>=90)?"A":(score>=75)?"B":(score>=60)?"C":(score>=45)?"D":(score<45)?"F":"Enter a valid grade";
+       console.log(grade);
+    </script>
+</body>
+</html>
